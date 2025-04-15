@@ -4,6 +4,6 @@
     "watch": ["composer.json", "composer.lock"]
   },
   "start": {
-    "command": "php -S 0.0.0.0:$PORT -t public"
+    "command": "echo \"Using port: ${PORT}\" && php -d display_errors=1 -S 0.0.0.0:${PORT} -t public"
   }
 }
