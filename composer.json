@@ -1,8 +1,12 @@
 {
   "build": {
-    "command": "composer install --no-dev"
+    "command": "composer install --no-dev",
+    "watch": [
+      "composer.json",
+      "composer.lock"
+    ]
   },
   "start": {
-    "command": "php -S 0.0.0.0:${PORT}"
+    "command": "php -S 0.0.0.0:${PORT} -t public"
   }
 }
